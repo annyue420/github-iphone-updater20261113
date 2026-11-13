@@ -28,17 +28,17 @@ footer{text-align:center;color:var(--muted);font-size:11px;padding:8px}
 </style>
 </head>
 <body>
-<header><h1>GitHubかんたん更新</h1><p>iPhoneのファイルを選んで、GitHubのリポジトリへまとめて反映</p></header>
+<header><h1>GitHubかんたん更新</h1><p>御守販売管理アプリ専用｜iPhoneのファイルを選んで既存リポジトリを更新</p></header>
 <main>
 <section class="card">
 <h2>① GitHubの接続先</h2>
 <div class="grid">
-<div><label for="owner">ユーザー名（Owner）</label><input id="owner" type="text" placeholder="例：akisaburo"></div>
-<div><label for="repo">リポジトリ名</label><input id="repo" type="text" placeholder="例：my-html-app"></div>
+<div><label for="owner">ユーザー名（Owner）</label><input id="owner" type="text" value="annyue420" placeholder="GitHubユーザー名"></div>
+<div><label for="repo">リポジトリ名</label><input id="repo" type="text" value="juyohinpos20261112" placeholder="リポジトリ名"></div>
 </div>
 <label for="branch">ブランチ名</label><input id="branch" type="text" value="main">
 <label for="folder">保存先フォルダ（任意）</label><input id="folder" type="text" placeholder="例： または app">
-<p class="hint">空欄ならリポジトリ直下。指定すると、そのフォルダ内へアップロードします。</p>
+<p class="hint">現在の公開サイトと同じリポジトリです。空欄なら直下へ保存します。通常は空欄のまま使ってください。</p>
 <label for="token">GitHubアクセストークン</label><input id="token" type="password" autocomplete="off" placeholder="github_pat_...">
 <p class="hint">毎回入力方式です。このアプリ内には保存しません。</p>
 <div class="note"><b>トークンの権限：</b>対象リポジトリだけを選んだFine-grained tokenを作成し、Repository permissionsの「Contents」をRead and writeにしてください。トークンは他人に見せないでください。</div>
@@ -62,8 +62,8 @@ footer{text-align:center;color:var(--muted);font-size:11px;padding:8px}
 </section>
 
 <section class="card">
-<h2>③ GitHubへ反映</h2>
-<p class="small">同じパスのファイルは上書き、新しいパスのファイルは追加します。1回の更新を1つのコミットにまとめます。</p>
+<h2>③ GitHubへ反映</h2><p class="small">更新先：<b>annyue420 / juyohinpos20261112</b>（mainブランチ）</p><p class="small"><a href="https://annyue420.github.io/juyohinpos20261112/" target="_blank" rel="noopener">現在の公開アプリを開く</a></p>
+<p class="small">同じパスのファイルは上書き、新しいパスのファイルは追加します。1回の更新を1つのコミットにまとめます。既存ファイルの削除は行いません。</p>
 <button id="upload" class="primary" disabled>GitHubを更新する</button>
 <div style="margin-top:12px"><div id="status" class="status">ファイルを選択すると更新ボタンが有効になります。</div></div>
 </section>
